@@ -21,18 +21,25 @@
         read and gives you intelligent recommendations on articles to read next,
         thereby enriching your reading experience.
       </p>
-      <button>Download</button>
-      <a href="">Learn more ></a>
+      <form>
+        <h4 id="sign">Sign up for early access!</h4>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email Address"
+        />
+        <button>Subscribe</button>
+      </form>
+      <!-- <button>Download</button>
+      <a href="">Learn more ></a> -->
     </div>
 
     <img src="mgainmj.png" id="bigimage" class="image" />
   </div>
   <footer id="footper">
     <br />
-    <form>
-      <h4 id="sign">Sign up for early access!</h4>
-      <input type="email" name="email" id="email" placeholder="Email Address" />
-    </form>
+
     <h3>@altadive 2021</h3>
   </footer>
 </body>
@@ -70,6 +77,7 @@
   }
   #container button {
     padding: 10px;
+    margin: 0;
     width: 20%;
     margin-top: 5%;
     background: #00c698;
@@ -86,21 +94,22 @@
   footer {
   }
   footer h3 {
-    float: right;
     font-size: 1rem;
   }
   #sign {
+    margin-top: 50px;
+    font-weight: 600;
     margin-bottom: 25px;
     color: #181818;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   input {
-    float: left;
+    outline: none;
     font-family: "poppins";
     border: none;
     padding-bottom: 8px;
     border-bottom: 3px solid #00c698;
-    width: 20%;
+    width: 40%;
   }
   .image {
     width: 50%;
