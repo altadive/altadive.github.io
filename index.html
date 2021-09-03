@@ -1,59 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <head>
-    <title>Altadive - dive deeper into what you read</title>    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-<link rel="icon" href = "logokaicon.png">
+  <title>Altadive - dive deeper into what you read</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="icon" href="logokaicon.png" />
 </head>
 <body>
-    <div id = "container">
-        <img src = "logo.png" id = "logyaar">
-        <h1 id = "texthead">Dive deeper into what you read.</h1>
-        <p id = "textpara">Reading a detailed article leaves you with an ocean of terms you don't know enough about. 
-        Alta dive is a web app that uses Natural Language Processing to look for unexplored ideas and 
-        topics in the articles you read and gives you intelligent recommendations on articles to read next,
-        thereby enriching your reading experience.</p>
-        <img src = "mgainmj.png" id = "bigimage">
-        <footer id = "footper"><br/>@altadive 2021</footer>
+  <img src="logo.png" id="logyaar" />
+  <div class="main">
+    <div id="container">
+      <h1 id="texthead"><span>Dive deeper </span>into what you read.</h1>
+      <p id="textpara">
+        Reading a detailed article leaves you with an ocean of terms you don't
+        know enough about. Alta dive is a web app that uses Natural Language
+        Processing to look for unexplored ideas and topics in the articles you
+        read and gives you intelligent recommendations on articles to read next,
+        thereby enriching your reading experience.
+      </p>
+      <button>Download</button>
+      <a href="">Learn more ></a>
     </div>
-    <style>
-        body{
-            font-family: 'Poppins', sans-serif;
-        }
-        #logyaar{
-            padding-top:5%;
-            width:10%;
-            height:10%;
-            padding-left:45%;
-            padding-bottom: 1%;
-        }
-        h1{
-            font-size: 20px;
-            text-align: center;
-        }
-        p{
-            font-size:15px;
-            padding-left: 17%;
-            padding-right: 17%;
-            padding-bottom: 3%;
-            text-align: center;
-        }
-        #bigimage{
-            height:60%;
-            width: 60%;
-            padding-left:20%;
-        }
-        footer{
-            width:98%;
-            height:6%; 
-            position:absolute;
-            bottom:0;
-            left:0;
-            background-color:#00C698;
-            padding-left:2%;
-            color:#fff;
-            font-size: 12px;
-        }
-    </style>
+
+    <img src="mgainmj.png" id="bigimage" class="image" />
+  </div>
+  <footer id="footper">
+    <br />
+    <form>
+      <h4 id="sign">Sign up for early access!</h4>
+      <input type="email" name="email" id="email" placeholder="Email Address" />
+    </form>
+    <h3>@altadive 2021</h3>
+  </footer>
 </body>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  #logyaar {
+    margin: 5%;
+    width: 200px;
+  }
+  .main {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    align-items: center;
+  }
+  #container {
+    width: 40%;
+    margin-right: 10%;
+  }
+  #container h1 {
+    margin-bottom: 5%;
+    color: #1f1f1f;
+  }
+  #container h1 span {
+    color: #0fb18b;
+  }
+  #container p {
+    color: #6c6767;
+  }
+  #container button {
+    padding: 10px;
+    width: 20%;
+    margin-top: 5%;
+    background: #00c698;
+    color: white;
+    font-family: "Poppins";
+    border: none;
+    cursor: pointer;
+  }
+  #container a {
+    margin-left: 3%;
+    text-decoration: none;
+    color: #00c698;
+  }
+  footer {
+  }
+  footer h3 {
+    float: right;
+    font-size: 1rem;
+  }
+  #sign {
+    margin-bottom: 25px;
+    color: #181818;
+    font-size: 1.2rem;
+  }
+  input {
+    float: left;
+    font-family: "poppins";
+    border: none;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #00c698;
+    width: 20%;
+  }
+  .image {
+    width: 50%;
+  }
+  footer {
+    padding-left: 5%;
+
+    padding-right: 5%;
+    padding-bottom: 2%;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    color: #00c698;
+  }
+</style>
